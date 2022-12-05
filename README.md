@@ -21,3 +21,5 @@ Tecnologias utilizadas:
 - Redux Toolkit
 - Semantic (Libreria de componentes)
 
+4. Ficheros de configuracion del frontend. => apps/frontend/src/app/constants.js
+5. Ficheros de configuracion del frontend. => apps/backend/bin/config/config.js
