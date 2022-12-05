@@ -1,5 +1,11 @@
 # allfunds-news - Prueba tecnica
 
+========================= NOTAS =====================================
+- Para esta prueba he utilizado el servidor de bbdd mongoatlas. Si desea utilizar una base de datos propia basta con
+cambiar la configuración de la base de datos en el fichero config ubicado en: apps/backend/bin/config/config.js.
+Para esta prueba pequeña he utilizado constantes, aunque lo ideal seria utilizar variables de entorno.
+=====================================================================
+
 1- Configuración del proyecto
 
 1.1 -> El primer paso seria descargar el proyecto en el equipo local.
