@@ -4,13 +4,16 @@ import {
 import Archived from "../views/archived";
 import News from "../views/news";
 
+const MAIN_VIEW = '/';
+const ARCHIVED_VIEW = '/archivos';
+
 export const router = createBrowserRouter([
     {
-      path: "/",
+      path: MAIN_VIEW,
       element: <News />
     },
     {
-      path: "/archivos",
+      path: ARCHIVED_VIEW,
       element: <Archived />,
       exact: true
     },

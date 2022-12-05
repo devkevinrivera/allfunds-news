@@ -53,8 +53,5 @@ const Archived = props => {
     );
 };
 
-Archived.propTypes = {
-    
-};
 
 export default Archived;

@@ -25,9 +25,6 @@ export const publicationSlice = createSlice({
     publicationNews: [],
     publicationArchived: []
   },
-  reducers: {
-    
-  },
   extraReducers: (builder) => {
     builder.addCase(fetchPublicationByDate.fulfilled, (state, action) => {
         state.publicationNews = action.payload;

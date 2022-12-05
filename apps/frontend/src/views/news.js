@@ -1,9 +1,8 @@
 import React from 'react';
 import { useEffect } from 'react';
-import { Container , Grid, Button, Card, Header, Icon, Divider} from "semantic-ui-react";
+import { Container , Grid, Card, Header, Icon, Divider} from "semantic-ui-react";
 import { useSelector, useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
-import PropTypes from 'prop-types';
 import PublicationCard from '../components/PublicationCard/PublicationCard';
 import { fetchPublicationByDate } from '../redux/slices/Publication';
 
@@ -49,10 +48,6 @@ const News = props => {
             </Grid>
         </Container>
     );
-};
-
-News.propTypes = {
-    
 };
 
 export default News;

@@ -12,9 +12,9 @@ var publicationsRouter = require('./routes/publications');
 var app = express();
 const cors = require('cors');
 const moongose = require('mongoose');
+const { MONGO_URL_CONNECTION } = require('./bin/config');
 
-console.log(process.env)
-const mongoUriConnection = 'mongodb+srv://kevinriveradev:23324123Ff*@cluster0.a9cm9e8.mongodb.net/app?retryWrites=true&w=majority'; 
+const mongoUriConnection = MONGO_URL_CONNECTION; 
 
 moongose.connect(mongoUriConnection, (err,res) => {
   if(err) console.log('Error de conexion con bbdd');

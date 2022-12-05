@@ -62,7 +62,7 @@ const PublicationCard = ({ publication }) => {
 };
 
 PublicationCard.propTypes = {
-    
+    publication: PropTypes.object
 };
 
 export default PublicationCard;

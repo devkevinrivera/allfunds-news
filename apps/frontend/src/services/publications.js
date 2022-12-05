@@ -1,14 +1,14 @@
 import axios from "axios";
+import { PUBLIC_API_URL } from "../app/constants";
 
 export const getPublicationByDate = () => 
-    axios.get('http://localhost:3001/publications')
-
+    axios.get(`${PUBLIC_API_URL}/publications`)
     
 export const getPublicationsArchived = () => 
-    axios.get(`http://localhost:3001/publications/archived`)
+    axios.get(`${PUBLIC_API_URL}/publications/archived`)
 
 export const archivePublication = (idPublication) => 
-    axios.post(`http://localhost:3001/publications/store/${idPublication}`)
+    axios.post(`${PUBLIC_API_URL}/publications/store/${idPublication}`)
 
 export const deletePublication = (idPublication) => 
-    axios.delete(`http://localhost:3001/publications/${idPublication}`)
+    axios.delete(`${PUBLIC_API_URL}/publications/${idPublication}`)
